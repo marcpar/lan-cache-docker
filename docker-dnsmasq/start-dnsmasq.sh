@@ -18,6 +18,6 @@ if [[ -z $HOST_IP ]]; then
 fi
 
 # concatenate all dnsmasq confs into one file and replace the placeholder with the host IP address
-cat /etc/dnsmasq.template.d/*.dnsmasq.conf | sed "s/NGINX_IP/$HOST_IP/" > /etc/dnsmasq.d/custom-zones.conf
+cat /etc/dnsmasq.template.d/*.dnsmasq.conf | sed "s/NGINX_IP/$HOST_IP/g" > /etc/dnsmasq.d/custom-zones.conf
 
 exec dnsmasq --no-daemon
