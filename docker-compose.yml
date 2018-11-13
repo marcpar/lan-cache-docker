@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     stdin_open: true
     tty: true
-    dns: 8.8.8.8
+    dns: 1.1.1.1
 
   nginx:
     container_name: nginx
