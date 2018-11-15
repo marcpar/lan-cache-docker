@@ -9,6 +9,10 @@
 * ArenaNet (Guild Wars 2)
 * Frontier (Elite Dangerous)
 * Microsoft (Windows Updates)
+* Xsplit
+* Google
+* Apple
+* Adobe
 
 The folowing are untested and may require SSL certificate spoofing to work (not covered here).
 * Xbox
