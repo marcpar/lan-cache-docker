@@ -1,0 +1,2 @@
+filebeat.modules:
+- module: nginx

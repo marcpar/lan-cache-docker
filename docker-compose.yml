@@ -41,4 +41,13 @@ services:
     - "443:443"
     volumes:
     - ./data/sniproxy.conf:/etc/sniproxy.conf
+    - ./data/logs:/var/log/sniproxy
     restart: unless-stopped
+  filebeat:
+    container_name: filebeat
+    image: marcpar/filebeat
+    hostname: "lancache-filebeat"
+    volumes:
+    - ./data/logs:/var/log:ro
+    - ./data/filebeat.yml:/usr/share/filebeat/filebeat.yml
+     
