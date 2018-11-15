@@ -23,11 +23,11 @@ The folowing are untested and may require SSL certificate spoofing to work (not 
 ## Quick Start
 1. Build the docker images and spawn docker containers:
     * `docker-compose up --build -d`
-    * Full setup instructions can be found [in the Wiki](https://github.com/RyanEwen/lan-cache-docker/wiki/Setup-instructions)
+    * Full setup instructions can be found [in the Wiki](https://github.com/marcpar/lan-cache-docker/wiki/Setup-instructions)
 
 1. Test your cache server from another machine:
     * `nslookup steamcontent.com <ip-of-cache-server>`
-    * Full testing instructions can be found [in the Wiki](https://github.com/RyanEwen/lan-cache-docker/wiki/How-to-test)
+    * Full testing instructions can be found [in the Wiki](https://github.com/marcpar/lan-cache-docker/wiki/How-to-test)
 
 1. Direct network traffic to your cache server:
     * Configure your router to use the cache server as a DNS server.
@@ -41,11 +41,11 @@ There are 3 docker containers that make up the cache server:
 * `sniproxy`: Uses SNI Proxy server as an HTTPS proxy to prevent redirected HTTPS traffic from 404-ing. This traffic cannot be cached so it's simply passed-through without decryption.
 
 ## Adding or updating services
-* Instructions can be found [in the Wiki](https://github.com/RyanEwen/lan-cache-docker/wiki/Adding-or-updating-services).
+* Instructions can be found [in the Wiki](https://github.com/marcpar/lan-cache-docker/wiki/Adding-or-updating-services).
 
 ## Help
-* Check the [Wiki](https://github.com/RyanEwen/lan-cache-docker/wiki) first.
-* Please report issues or request help [here](https://github.com/RyanEwen/lan-cache-docker/issues)
+* Check the [Wiki](https://github.com/marcpar/lan-cache-docker/wiki) first.
+* Please report issues or request help [here](https://github.com/marcpar/lan-cache-docker/issues)
 
 ## Credits
 This started as a fork of [OpenSourceLAN's origin-docker](https://github.com/OpenSourceLAN/origin-docker) which I decided to dive deep into and ended up reorganizing quite a bit. Credit is due over there :)
